@@ -3,7 +3,7 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" initial-scale=1.0/>
     <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
@@ -12,29 +12,25 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
     <main>
       <h1>Sign Up</h1>
       <form id="signup">
-        <input type="text" placeholder="First Name" class="row"></input>
-        <input  type="text"  placeholder="Last Name" class="row"></input>
-        <input  type="text" placeholder="Mobile No." ></input>
+        <input type="text" placeholder="First Name" class="row-item"></input>
+        <input  type="text"  placeholder="Last Name" class="row-item2"></input>
+        <input  type="text" placeholder="Mobile No." class="row-whole"></input>
         <br/>
-        <input  type="text" placeholder="Email Address"></input>
+        <input  type="text" placeholder="Email Address" class="row-whole"></input>
         <br/>
-        <input type="text" placeholder="Password" class="row"></input>
-        <input  type="text" placeholder="Confirm Password" class="row"></input>
+        <input type="text" placeholder="Password" class="row-item"></input>
+        <input  type="text" placeholder="Confirm Password" class="row-item2"></input>
         <br/><br/>
         <div class="agree-items">
         <input type="checkbox" id="agree" name="agree" value="Yes">
-        <label for="agree"> I agree</label>
+        <label for="agree"> <b>I Agree</b></label>
         <p class="register-agree">By clicking <span class="register-text">Register</span>, you agree to the <a href="">terms and conditions</a> set out by this site, including our cookie use.</p>
         </div>
-        <button type="submit" form="signup" value="Submit">Register</button>
-        <button type="submit" form="signup" value="Submit">Register</button>
+        <button class="reg-button" type="submit" form="signup" value="Register">Register</button>
+        <button class="reg-button2" type="submit" form="signup" value="Sign In">Sign In</button>
       </form>
     </main>
   </body>
